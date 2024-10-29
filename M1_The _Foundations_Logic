@@ -1,0 +1,330 @@
+Turkish
+Her zaman doğru olan önerme ⊤ (T) ile, her zaman yanlış olan önerme ise ⊥ (F) ile gösterilir.
+Bileşik Önerme: Mantıksal bağlaçlar ve diğer önermeler kullanılarak oluşturulur. Bunlar şunlardır:
+
+-------------------------------------------------------------------------------------------------------------
+Olumsuzluk (¬): Bir önermeyi tersine çevirir, yani doğruyu yanlış, yanlışı doğru yapar.
+Birliktelik (∧): İki önermenin aynı anda doğru olması durumunu ifade eder.
+Ayrıksı (∨): İki önermeden en az birinin doğru olmasını ifade eder.
+İmleme (→): İlk önermenin doğru olması, ikinci önermenin de doğru olmasını gerektirir.
+Çift Yönlü (↔): İki önermenin aynı doğruluk değerine sahip olmasını ifade eder.
+Daha detaylı anlatmamı istediğiniz veya belirli bir noktayı sormak istediğiniz bir şey var mı?
+
+-------------------------------------------------------------------------------------------------------------
+İmleme (→):
+Doğruluk Tablosunun Açıklaması:
+
+Doğru → Doğru = Doğru: Hem P hem de Q doğru ise, "P → Q" imlemesi de doğrudur.
+Doğru → Yanlış = Yanlış: P doğru, fakat Q yanlış ise imleme yanlıştır. Çünkü "P olursa, Q da olur" vaadi bozulmuştur.
+Yanlış → Doğru = Doğru: P yanlış ise, "P → Q" imlemesi Q ne olursa olsun doğru kabul edilir. Çünkü P gerçekleşmediğinden, vaadin bozulması söz konusu değildir.
+Yanlış → Yanlış = Doğru: Benzer şekilde, P yanlış ve Q da yanlışsa, imleme hala doğru kabul edilir. Çünkü P gerçekleşmediği için "vaat" bozulmamış olur.
+
+-------------------------------------------------------------------------------------------------------------
+Öncelik Açıklaması
+Olumsuzluk (¬) en yüksek önceliğe sahiptir, yani önce bu değerlendirilecektir.
+Birliktelik (∧) bir sonraki önceliğe sahiptir.
+Ayrıksı (∨), birliktelikten daha düşük ancak imlemeden daha yüksek bir önceliğe sahiptir.
+İmleme (→), birliktelik ve ayrıksıdan sonra değerlendirilir.
+Çift Yönlü (↔) en düşük önceliğe sahiptir ve en son değerlendirilir.
+
+-------------------------------------------------------------------------------------------------------------
+Totolojiler, Çelişkiler ve Olasılıklar
+
+Totoloji, her zaman doğru olan bir önermedir.
+
+
+p∨¬p (p veya değil p)
+Çelişki, her zaman yanlış olan bir önermedir.
+
+
+p∧¬p (p ve değil p)
+Olasılık, ne totoloji ne de çelişki olan bir önermedir
+-------------------------------------------------------------------------------------------------------------
+Değişme Yasaları (Commutative Laws):
+
+p∨q≡q∨p
+p∧q≡q∧p
+Değişme yasaları, VEYA (∨) veya VE (∧) işlemlerinde önermelerin sırasının sonuca etki etmediğini belirtir.
+
+Birleşme Yasaları (Associative Laws):
+
+(p∧q)∧r≡p∧(q∧r)
+(p∨q)∨r≡p∨(q∨r)
+Birleşme yasaları, VE veya VEYA ile önermeleri birleştirirken gruplamanın sonuca etki etmediğini ifade eder.
+
+Dağılma Yasaları (Distributive Laws):
+
+p∨(q∧r)≡(p∨q)∧(p∨r)
+p∧(q∨r)≡(p∧q)∨(p∧r)
+Dağılma yasaları, VE’nin VEYA üzerine ve VEYA’nın VE üzerine dağılmasını sağlar, tıpkı aritmetikte çarpmanın toplama üzerine dağılması gibi.
+
+Soğurma Yasaları (Absorption Laws):
+
+p∨(p∧q)≡p
+p∧(p∨q)≡p
+Soğurma yasaları, ifadeleri basitleştirerek gereksiz kısımları kaldırır ve böylece önerme kendisini "soğurmuş" olur.
+-------------------------------------------------------------------------------------------------------------
+Önerme Mantığına Giriş
+
+Önerme mantığına göre kıyasla, yargı mantığı yeni özellikler ekler:
+
+Değişkenler: 
+x,y,z
+
+Yüklemler: 
+P(x),M(x) - Bunlar, değişkenin değerine bağlı olarak doğru veya yanlış dönen fonksiyonlardır.
+Niceleyiciler (sonraki slaytlarda açıklanacak): Bunlar, "her biri için" veya "en az bir tane" türündeki ifadeleri belirtmeye yardımcı olur.
+Önerme Fonksiyonları, önermelerin genelleştirilmiş halidir.
+
+Değişkenler ve yüklem içerirler, örneğin 
+P(x).
+Değişkenler, doğruluk veya yanlışlık değerini belirlemek için alanlarındaki elemanlarla değiştirilebilir.
+Önerme Fonksiyonları
+
+Önerme fonksiyonları, değişkenler belirli değerlerle değiştirildiğinde veya bir niceleyici ile bağlandığında önermeler (ve dolayısıyla doğruluk değerleri) haline gelir.
+P(x) ifadesi, 
+x üzerindeki önerme fonksiyonunun değerini temsil eder.
+Örnek:
+P(x), "x > 0" ifadesini temsil etsin ve alan (domain) tam sayılar olsun.
+P(−3) yanlıştır.
+P(0) yanlıştır.
+P(3) doğrudur.
+Alan genellikle 
+U ile gösterilir. Bu örnekte, 
+U tam sayılardır.
+-------------------------------------------------------------------------------------------------------------
+Niceleyiciler (Quantifiers)
+
+Niceleyiciler, mantık ifadelerinde "her biri" ve "bazıları" gibi kelimelerin anlamını ifade etmek için kullanılır.
+
+Örnekler:
+"Tüm insanlar ölümlüdür."
+"Bazı kedilerin kürkü yoktur."
+İki önemli niceleyici vardır:
+
+Evrensel Niceleyici ("Her biri için"), sembol: ∀
+∀ P(x) şeklinde yazılır ve 
+P(x)'nin alandaki her bir eleman için doğru olduğunu belirtir.
+Varoluşsal Niceleyici ("En az bir tane vardır"), sembol: ∃
+∃ x P(x) şeklinde yazılır ve 
+P(x)'nin alandaki bazı elemanlar için doğru olduğunu belirtir.
+Niceleyiciler, bu ifadelerde 
+x değişkenini bağlamak için kullanılır.
+
+Niceleyicileri Bağlaçlar (Conjunction) ve Ayrıksı (Disjunction) Olarak Düşünmek
+
+Eğer alan sonluysa, evrensel niceleyiciye sahip bir önerme, niceleyiciler olmadan bir bağlaç kombinasyonu olarak düşünülebilir.
+Örneğin, alan 1, 2 ve 3 tam sayılarından oluşuyorsa:
+∀xP(x)≡P(1)∧P(2)∧P(3)
+Benzer şekilde, varoluşsal niceleyiciye sahip bir önerme, niceleyiciler olmadan bir ayrıksı kombinasyonu olarak düşünülebilir:
+∃xP(x)≡P(1)∨P(2)∨P(3)
+Alanlar sonsuz olsa bile, niceleyicileri bu şekilde düşünmek mümkündür.
+
+-------------------------------------------------------------------------------------------------------------
+
+
+Alan sonlu olduğunda, niceleyiciyi tüm alan elemanları üzerinde döngü yaparak düşünmek mümkündür.
+∀ x P(x) değerlendirmek için:
+Alan içindeki tüm 
+x üzerinde döngü yapın.
+Eğer 
+P(x) her adımda doğru ise, o zaman ∀ x P(x) doğrudur.
+Eğer herhangi bir adımda 
+P(x) yanlış ise, ∀ x P(x) yanlıştır ve döngü sona erer.
+∃ x P(x) değerlendirmek için:
+Alan içindeki tüm 
+x üzerinde döngü yapın.
+Eğer herhangi bir adımda 
+P(x) doğru ise, ∃ x P(x) doğrudur ve döngü sona erer.
+Eğer hiçbir 
+x değeri için 
+P(x) doğru değilse, o zaman ∃ x P(x) yanlıştır.
+Alan sonsuz olsa bile, niceleyicileri bu şekilde düşünmek mümkündür; ancak bu durumda döngüler bazı durumlarda sona ermeyebilir.
+
+Niceleyicilerin Önceliği
+
+∀ (evrensel) ve ∃ (varoluşsal) niceleyiciler, tüm mantıksal operatörlerden daha yüksek önceliğe sahiptir.
+Örneğin, ∀ x P(x) ∨ Q(x) ifadesi, (∀ x P(x)) ∨ Q(x) anlamına gelir ve "her 
+x için, 
+P(x)" veya 
+Q(x) anlamındadır.
+∀ x (P(x) ∨ Q(x)) ise farklı bir şey ifade eder; bu, her 
+x için, ya 
+P(x) ya da 
+Q(x)'nin doğru olduğunu belirtir.
+İnsanlar genellikle yanlış bir şekilde ∀ x P(x) ∨ Q(x) ifadesini yazarlar; aslında ∀ x (P(x) ∨ Q(x)) demek isterler.
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+English
+A proposition that is always true is denoted by ⊤ (T), and a proposition that is always false is denoted by ⊥ (F).
+Compound Propositions: Constructed using logical connectives and other propositions, such as:
+
+Negation (¬): Reverses the truth value of a proposition, making true false, and false true.
+Conjunction (∧): Represents the logical "and," true only if both propositions are true.
+Disjunction (∨): Represents the logical "or," true if at least one of the propositions is true.
+Implication (→): Means that if the first proposition is true, the second must also be true.
+Biconditional (↔): Represents two propositions having the same truth value.
+
+-------------------------------------------------------------------------------------------------------------
+Implication (→):
+Explanation of the Truth Table:
+
+True → True = True: If both P and Q are true, then the implication "P → Q" is also true.
+True → False = False: If P is true but Q is false, then the implication is false. This is because the promise that "if P happens, then Q will happen" is broken.
+False → True = True: If P is false, then the implication "P → Q" is considered true regardless of Q. This is because the statement "if P happens, then Q happens" is not violated since P did not actually happen.
+False → False = True: Similarly, if P is false and Q is also false, the implication is still considered true because P never occurred, so the "promise" wasn't broken.
+
+-------------------------------------------------------------------------------------------------------------
+Explanation of Precedence
+Negation (¬) has the highest precedence, meaning it will be evaluated first.
+Conjunction (∧) follows next.
+Disjunction (∨) has a lower precedence than conjunction but higher than implication.
+Implication (→) is evaluated after conjunction and disjunction.
+Biconditional (↔) has the lowest precedence and is evaluated last.
+
+
+-------------------------------------------------------------------------------------------------------------
+Tautologies, Contradictions, and Contingencies
+
+A tautology is a proposition that is always true.
+
+A contradiction is a proposition that is always false.
+
+A contingency is a proposition that is neither a tautology nor a contradiction, such as 
+
+
+--------------------------------------------------------------------------------------------------------------
+Key Logical Equivalences (continued)
+
+Commutative Laws:
+
+p∨q≡q∨p
+p∧q≡q∧p
+The commutative laws state that the order of propositions does not affect the outcome of an OR (∨) or AND (∧) operation.
+
+Associative Laws:
+
+(p∧q)∧r≡p∧(q∧r)
+(p∨q)∨r≡p∨(q∨r)
+The associative laws indicate that when combining propositions with AND or OR, the grouping does not change the result.
+
+Distributive Laws:
+
+p∨(q∧r)≡(p∨q)∧(p∨r)
+p∧(q∨r)≡(p∧q)∨(p∧r)
+The distributive laws allow for distributing AND over OR and vice versa, similar to distributing multiplication over addition in arithmetic.
+
+Absorption Laws:
+
+p∨(p∧q)≡p
+p∧(p∨q)≡p
+The absorption laws simplify expressions by removing redundant parts, effectively absorbing the proposition into itself.
+-------------------------------------------------------------------------------------------------------------
+
+Introducing Predicate Logic
+
+Predicate logic introduces new features compared to propositional logic:
+
+Variables: 
+x,y,z
+
+Predicates: 
+
+P(x),M(x) - These are functions that return true or false depending on the value of the variable.
+Quantifiers (to be covered later): These will help specify "for all" or "there exists" types of statements.
+Propositional Functions are a generalization of propositions.
+
+They contain variables and a predicate, such as 
+P(x).
+Variables can be replaced by elements from their domain, allowing the function to evaluate as true or false.
+Propositional Functions
+
+Propositional functions become propositions (with truth values) when the variables are replaced with specific values from the domain (or are bound by a quantifier, which we will cover later).
+The statement 
+P(x) represents the value of the propositional function at 
+
+Example:
+Let 
+P(x) represent "x > 0" with the domain being the integers.
+P(−3) is false.
+P(0) is false.
+P(3) is true.
+The domain is often represented by 
+U. In this example, 
+U is the set of integers.
+-------------------------------------------------------------------------------------------------------------
+Quantifiers
+
+Quantifiers are used to express the meaning of words like "all" and "some" in logical terms.
+
+Examples:
+"All men are mortal."
+"Some cats do not have fur."
+The two most important quantifiers are:
+
+Universal Quantifier ("For all"), symbol: ∀
+Written as ∀ P(x), which asserts that 
+P(x) is true for every element in the domain.
+Existential Quantifier ("There exists"), symbol: ∃
+Written as ∃ x P(x), which asserts that 
+P(x) is true for some element in the domain.
+Quantifiers are used to bind the variable 
+x in these expressions.
+
+Thinking about Quantifiers as Conjunctions and Disjunctions
+
+If the domain is finite, a universally quantified proposition can be thought of as a conjunction of propositions without quantifiers.
+For example, if the domain consists of integers 1, 2, and 3:
+
+∀xP(x)≡P(1)∧P(2)∧P(3)
+Similarly, an existentially quantified proposition can be thought of as a disjunction of propositions without quantifiers:
+
+∃xP(x)≡P(1)∨P(2)∨P(3)
+Even if the domains are infinite, you can still think of quantifiers in a similar way.
+
+-------------------------------------------------------------------------------------------------------------
+
+
+When the domain is finite, we can think of quantification as looping through all elements in the domain.
+To evaluate ∀ x P(x):
+Loop through all 
+
+x in the domain.
+If 
+P(x) is true for every step, then ∀ x P(x) is true.
+If at any step 
+
+P(x) is false, then ∀ x P(x) is false, and the loop terminates.
+To evaluate ∃ x P(x):
+Loop through all 
+
+x in the domain.
+If 
+P(x) is true at any step, then ∃ x P(x) is true, and the loop terminates.
+If no 
+x is found for which 
+P(x) is true, then ∃ x P(x) is false.
+Even if the domain is infinite, we can still think of quantifiers this way, but the loops may not terminate in some cases.
+Precedence of Quantifiers
+
+Quantifiers ∀ (universal) and ∃ (existential) have higher precedence than all logical operators.
+For example, ∀ x P(x) ∨ Q(x) means (∀ x P(x)) ∨ Q(x), which means "for all 
+P(x)" OR 
+Q(x).
+∀ x (P(x) ∨ Q(x)) means something different, as it asserts that for all 
+x, either 
+P(x) or 
+Q(x) is true.
+People often incorrectly write ∀ x P(x) ∨ Q(x) when they actually mean ∀ x (P(x) ∨ Q(x)).
+
+-------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------
