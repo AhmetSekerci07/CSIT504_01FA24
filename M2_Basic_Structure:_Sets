@@ -1,0 +1,188 @@
+Turkish
+=====================================================================================================================
+
+Kümelere Giriş
+
+Küme: Sınıftaki öğrenciler, bu odadaki sandalyeler gibi, nesnelerin sırasız bir koleksiyonudur.
+Bir kümedeki nesneler, elemanlar veya kümenin üyeleri olarak adlandırılır. Küme, elemanlarını içerir.
+a ∈ A gösterimi, a'nın A kümesinin bir elemanı olduğunu belirtir.
+a bir eleman değilse a ∉ A şeklinde yazılır.
+
+------------------------------------------------------------------------------------------------------
+
+Kümelerin Tanımlanması: Listeleme Yöntemi
+
+Küme: Nesnelerin sırasız bir koleksiyonudur.
+Listeleme Yöntemi: Kümenin her elemanını açıkça listeler.
+Öğelerin sırası önemli değildir.
+Aynı elemanı birden fazla listelemek kümeyi değiştirmez.
+Tüm üyeleri listelemeden tanımlamak için üç nokta (...) kullanılabilir.
+
+Kümelerin Tanımlanması
+
+Küme: Nesnelerin sırasız bir koleksiyonudur.
+Listeleme Yöntemi: Kümenin her elemanını açıkça listeler.
+Örnek: S = {1, 2, 3, 4}
+Kurucu Yöntemi: Küme elemanlarını tanımlamak için elemanların sahip olması gereken özellikleri belirtir.
+Örnek: S = {x | x < 10 ve x pozitif tam sayı}
+
+--------------------------------------------------------------------------------------------------
+
+Aralık Gösterimi
+
+Kapalı Aralık [a, b]: Bu gösterim, a ve b dahil olmak üzere bu aralıktaki tüm değerleri içerir.
+Örnek: [2, 5] = {2, 3, 4, 5}
+Başka bir örnek: [0, 3] = {0, 1, 2, 3}
+
+Açık Aralık (a, b): Bu gösterim, a ve b hariç, sadece bu iki sayı arasındaki değerleri içerir.
+Örnek: (2, 5) = {3, 4}
+Başka bir örnek: (1, 4) = {2, 3}
+
+Yarı Açık/Kapalı Aralık: [a, b) veya (a, b] gibi gösterimler, aralığın bir ucunun dahil olup olmadığını belirtir.
+Örnek: [2, 5) = {2, 3, 4}
+Başka bir örnek: (1, 4] = {2, 3, 4}
+
+--------------------------------------------------------------------------------------------------
+Evrensel Küme ve Boş Küme
+
+Evrensel Küme (U): Tüm öğeleri içeren kümedir.
+Bazen örtük, bazen açıkça belirtilir.
+İçeriği bağlama bağlıdır.
+Boş Küme (Ø): Hiçbir elemanı olmayan kümedir.
+Venn Diyagramları: Kümeleri görselleştirmek için kullanılır.
+
+Önemli Noktalar:
+Kümeler, başka kümelerin elemanı olabilir.
+Örnek: {{1, 2, 3}, a, {b, c}}, {N, Z, Q, R}
+Boş küme, boş küme içeren bir kümeden farklıdır: Ø ≠ {Ø}
+Açıklama: Boş küme (Ø), içinde hiçbir elemanı olmayan kümedir.
+{Ø} ise içinde bir eleman olarak boş kümeyi barındıran bir kümedir. 
+Bu durumda, {Ø} kümesinin bir elemanı vardır ve bu eleman boş kümedir, bu yüzden Ø ve {Ø} aynı değildir.
+
+
+
+
+--------------------------------------------------------------------------------------------------
+Russell Paradoksu
+
+Tanım: Bir kümenin kendisini eleman olarak içermesine izin verirsek, bir çelişki ortaya çıkar.
+
+: Kendisini içermeyen tüm kümelerin kümesi.
+Eğer  ise,  kendini içermemeli, bu bir çelişki yaratır.
+Eğer  ise,  kendini içermeli, bu da bir çelişki yaratır.
+Berber Paradoksu: Henry, kendini tıraş etmeyen herkesi tıraş eden bir berberdir. 
+"Henry kendini tıraş eder mi?" sorusu çelişki yaratır.
+
+Küme Eşitliği
+Tanım: İki küme, yalnızca aynı elemanlara sahipse birbirine eşittir.
+Eğer  ve  kümeleri varsa,  ancak ve ancak tüm  elemanları için  ise geçerlidir.
+Eğer  ve  eşit kümelerse,  yazarız.
+--------------------------------------------------------------------------------------------------
+Alt Kümeler (Subsets)
+
+TANIM:
+A kümesi B kümesinin alt kümesidir ancak ve ancak A'nın her elemanı aynı zamanda B'nin de elemanıdır.
+
+GÖSTERIM:
+A ⊆ B şeklinde gösterilir
+Bu gösterim "A, B'nin alt kümesidir" anlamına gelir
+
+ÖNEMLİ ÖZELLIKLER:
+Boş küme (∅), her kümenin alt kümesidir
+Her küme kendisinin alt kümesidir (S ⊆ S)
+
+--------------------------------------------------------------------------------------------------
+
+
+
+
+
+English
+=====================================================================================================================
+
+Set: An unordered collection of objects, such as the students in this class or the chairs in this room.
+The objects in a set are called elements, or members of the set. A set is said to contain its elements.
+The notation a ∈ A denotes that a is an element of the set A.
+If a is not an element, write a ∉ A.
+
+------------------------------------------------------------------------------------------------------------------
+Describing Sets: The Roster Method
+
+Set: An unordered collection of objects.
+Roster Method: Lists every element of the set explicitly.
+The order of elements is not important.
+Listing an element more than once does not change the set.
+Ellipses (...) can describe a set without listing all members.
+
+
+Describing Sets
+
+Set: An unordered collection of objects.
+Roster Method: Lists every element of the set explicitly.
+Example: S = {1, 2, 3, 4}
+Set-Builder Notation: Defines a set by specifying properties that elements must satisfy.
+Example: S = {x | x < 10 and x is a positive integer}
+--------------------------------------------------------------------------------------------------
+
+Interval Notation
+
+Closed Interval [a, b]: This notation includes all values between a and b, including a and b themselves.
+Example: [2, 5] means {2, 3, 4, 5}
+Another example: [0, 3] means {0, 1, 2, 3}
+
+Open Interval (a, b): This notation includes all values between a and b, but not a and b themselves.
+Example: (2, 5) means {3, 4}
+Another example: (1, 4) means {2, 3}
+
+Half-Open/Half-Closed Interval: Notations like [a, b) or (a, b] indicate whether one end of the range is included or not.
+Example: [2, 5) means {2, 3, 4}
+Another example: (1, 4] means {2, 3, 4}
+
+
+--------------------------------------------------------------------------------------------------
+Universal Set and Empty Set
+Universal Set (U): The set containing all possible elements.
+Sometimes implicit, sometimes explicitly stated.
+Contents depend on the context.
+Empty Set (Ø): The set with no elements.
+Venn Diagrams: Used to visualize sets.
+
+Important Considerations:
+Sets can be elements of other sets.
+Example: {{1, 2, 3}, a, {b, c}}, {N, Z, Q, R}
+The empty set is different from a set containing the empty set: Ø ≠ {Ø}
+Explanation: The empty set (Ø) is a set with no elements. 
+{Ø} is a set that contains one element, which is the empty set itself.
+Therefore, {Ø} has one element, whereas Ø has none, making them different.
+
+
+--------------------------------------------------------------------------------------------------
+
+Russell's Paradox
+
+Definition: Allowing a set to contain itself as an element leads to a contradiction.
+
+: The set of all sets that do not contain themselves.
+If , then  should not contain itself, which is a contradiction.
+If , then  should contain itself, which is also a contradiction.
+Barber Paradox: Henry is a barber who shaves all people who do not shave themselves. 
+The question "Does Henry shave himself?" leads to a contradiction.
+
+
+Definition: Two sets are equal if and only if they have the same elements.
+If  and  are sets, then  if and only if for all elements , .
+We write  if  and  are equal sets.
+
+--------------------------------------------------------------------------------------------------
+Subsets
+
+DEFINITION:
+Set A is a subset of set B if and only if every element of A is also an element of B.
+
+NOTATION:
+Written as A ⊆ B
+This notation means "A is a subset of B"
+
+IMPORTANT PROPERTIES:
+The empty set (∅) is a subset of every set
+Every set is a subset of itself (S ⊆ S)
